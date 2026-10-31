@@ -1,0 +1,23 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "rooms": {
+      "$room": {
+        "players": {
+          ".read": "auth != null && $room.matches(/^[a-zA-Z0-9_-]{1,32}$/)",
+          "$uid": {
+            ".write": "auth != null && auth.uid === $uid && $room.matches(/^[a-zA-Z0-9_-]{1,32}$/)",
+            ".validate": "newData.hasChildren(['name', 'color', 'x', 'y', 'updatedAt'])",
+            "name": { ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 12" },
+            "color": { ".validate": "newData.val() === '#528e73' || newData.val() === '#6888b5' || newData.val() === '#cb8b52' || newData.val() === '#aa78a1'" },
+            "x": { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 1100" },
+            "y": { ".validate": "newData.isNumber() && newData.val() >= 0 && newData.val() <= 620" },
+            "updatedAt": { ".validate": "newData.isNumber() && newData.val() >= now - 60000 && newData.val() <= now + 5000" },
+            "$other": { ".validate": false }
+          }
+        }
+      }
+    }
+  }
+}
