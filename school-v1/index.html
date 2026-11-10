@@ -10,7 +10,7 @@
 <button class="isle p0" data-island="0"><span class="icon">🌏</span><span><small>雙語溝通力</small>世界溝通島</span><b>↗</b></button><button class="isle p1" data-island="1"><span class="icon">🤖</span><span><small>科技應用力</small>科技創意島</span><b>↗</b></button><button class="isle p2" data-island="2"><span class="icon">🌿</span><span><small>健康好體力</small>健康活力島</span><b>↗</b></button><button class="isle p3" data-island="3"><span class="icon">📖</span><span><small>閱讀文通力</small>閱讀探索島</span><b>↗</b></button><button class="isle home" id="home">🌳 東山主島</button><span class="mapnote">✦ 拖曳轉動 3D 地圖 · 點選島嶼接任務</span></div><div class="legend"><span><i></i>四力任務 · 每島 2 題</span><span>✓ 完成後收集徽章</span><button id="night" class="pill" aria-pressed="false">☾ 切換夜色</button><button id="motion" class="pill" aria-pressed="false">Ⅱ 暫停動態</button></div><div class="tasklist" id="tasklist" hidden></div></section></main>
 <footer><span>東山國小 · 全校版 v1.1 · 3D 群島<br>創意示意地圖；試玩紀錄不列入正式成績。</span><span id="footerHint">GitHub Pages 提供探索與試玩；正式帳密驗證由校方 Apps Script 處理。</span><a href="../">原版四力冒險島 ↗</a></footer>
 <dialog id="modal"><button class="close" id="close" aria-label="關閉視窗">×</button><div id="modalBody"></div></dialog>
-<script src="config.js"></script><script>
+<script src="config.js?v=8a71e5ec"></script><script>
 'use strict';
 const TASKS=[
 {name:'世界溝通島',icon:'🌏',power:'雙語溝通力',badge:'友善溝通家',intro:'新朋友來到東山，練習用英語送上一份歡迎。',questions:[{q:'第一次見面，可以說哪一句？',a:['Hello! Nice to meet you.','Goodbye!','Good night!'],correct:0,hint:'Hello 是見面時的問候；Nice to meet you 表示很高興認識你。'},{q:'「歡迎來到我們的學校」怎麼說？',a:['I like apples.','Welcome to our school!','This is my pencil.'],correct:1,hint:'Welcome 是歡迎，our school 是我們的學校。'}]},
