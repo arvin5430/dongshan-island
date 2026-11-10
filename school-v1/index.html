@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#edf5ed"><title>東山學習冒險島｜全校版初版</title>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#edf5ed"><title>東山學習冒險島｜3D 群島</title>
 <style>
 :root{--ink:#244b44;--muted:#667b70;--paper:#fbfaf4;--green:#2b6a54;--orange:#d97743;--line:#dfe6da}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif}button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}button:focus-visible,a:focus-visible{outline:3px solid #e99935;outline-offset:4px}button{color:inherit}header{height:90px;padding:0 4%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:16px}.brand{display:flex;gap:12px;align-items:center;color:inherit;text-decoration:none;font-weight:800;letter-spacing:1px}.mark{width:46px;height:46px;display:grid;place-items:center;background:#2b6a54;color:#fff;border-radius:15px;font-size:24px}.brand small{display:block;font-size:11px;letter-spacing:2px;font-weight:400;margin-top:5px;color:var(--muted)}.tools{display:flex;gap:8px;align-items:center}.pill{border:1px solid var(--line);border-radius:24px;background:#fff;padding:10px 16px;font-size:13px}.primary{border:0;background:var(--green);color:white;border-radius:12px;padding:13px 20px;font-weight:700}.secondary{border:1px solid var(--line);background:white;border-radius:12px;padding:12px 18px}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--muted);font-weight:700}.layout{display:grid;grid-template-columns:280px minmax(0,1fr);gap:28px;padding:32px 4%;max-width:1600px;margin:auto}.side h1{font-size:35px;line-height:1.4;letter-spacing:-1px;margin:12px 0}.side p{font-size:14px;color:var(--muted);line-height:1.9}.tag{display:inline-block;border-radius:7px;padding:5px 9px;background:#f8e8ce;color:#875d21;font-size:11px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;margin-top:22px}.card h2{font-size:16px;margin:0 0 12px}.progress{height:7px;background:#edf0e5;border-radius:9px;overflow:hidden;margin:12px 0}.progress i{display:block;background:#dca754;height:100%;transition:width .5s}.stats{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}.challenge{display:flex;gap:12px;align-items:center;font-size:14px;line-height:1.7}.challenge span{font-size:29px}.small{font-size:12px!important;color:var(--muted);line-height:1.7}.maphead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 16px}.maphead h2{font-size:20px;margin:0 0 5px}.maphead p{font-size:12px;margin:0;color:var(--muted)}.ocean{position:relative;aspect-ratio:1100/690;background:#b5ded6;border-radius:28px;overflow:hidden;border:1px solid #aacfc5;transition:background .5s}.ocean:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 90px #3c8d8218;border-radius:28px}.world{position:absolute;width:100%;height:90%;top:0;left:0}.isle{position:absolute;border:0;background:#fffffff2;border-radius:13px;padding:10px 14px;box-shadow:0 5px 0 #5e9c8b24;display:flex;gap:8px;align-items:center;transform:translate(-50%,-50%);white-space:nowrap;font-weight:700;transition:margin .2s}.isle:hover{margin-top:-5px}.isle small{display:block;font-weight:400;font-size:10px;color:var(--muted);margin-bottom:3px}.isle .icon{font-size:23px}.isle b{border-radius:50%;width:22px;height:22px;display:grid;place-items:center;background:#e9eee1;font-size:12px}.isle.done b{background:var(--green);color:white}.p0{left:26%;top:35%}.p1{left:74%;top:35%}.p2{left:26%;top:74%}.p3{left:74%;top:74%}.home{left:50%;top:53%;font-size:12px;background:#fff8df}.mapstamp{position:absolute;top:23px;left:25px;font-size:11px;letter-spacing:2px;color:#366e64}.compass{position:absolute;right:22px;top:22px;text-align:center;color:#4e877b}.mapnote{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-size:11px;letter-spacing:1px;color:#397264}.legend{display:flex;gap:18px;flex-wrap:wrap;padding:17px 8px;font-size:12px;color:var(--muted)}.legend i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#dca754;margin-right:6px}.tasklist{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.tasklist[hidden]{display:none}.taskitem{text-align:left;background:white;border:1px solid var(--line);border-radius:15px;padding:16px}.taskitem small{display:block;margin-top:8px;color:var(--muted)}footer{padding:15px 4% 25px;display:flex;justify-content:space-between;gap:15px;color:var(--muted);font-size:11px;line-height:1.8}footer a{color:inherit}.night{background:#3f6977}.night .world{filter:brightness(.76) saturate(.85)}.cloud{animation:float 6s ease-in-out infinite}.paused .cloud{animation:none}@keyframes float{50%{transform:translateX(10px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}dialog{border:0;border-radius:25px;padding:30px;width:min(540px,92vw);max-height:90dvh;color:var(--ink);box-shadow:0 30px 100px #13372e33}dialog::backdrop{background:#143c3666;backdrop-filter:blur(5px)}.close{float:right;border:0;background:#eef2e8;border-radius:50%;width:32px;height:32px}.modalicon{font-size:45px;margin:8px 0 14px}dialog h2{font-size:25px;line-height:1.5;margin:12px 0}dialog p{line-height:1.9;font-size:14px;color:var(--muted)}.field{display:block;font-size:13px;font-weight:700;margin-top:16px}.field input,.field select{display:block;width:100%;margin-top:8px;border:1px solid #cbd7cc;border-radius:10px;padding:12px;background:white;color:var(--ink)}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.notice{padding:13px 15px;background:#f7f0dc;border-radius:12px;font-size:13px;line-height:1.8;margin:14px 0}.answer{display:block;width:100%;border:1px solid #dce5da;border-radius:12px;padding:14px;background:#fff;text-align:left;margin:10px 0}.answer:hover{background:#f1f5e9}.bad{color:#a34835}.good{color:#2b6a54}.stamps{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stamp{padding:20px 10px;background:#f1f3ea;border-radius:15px;text-align:center;line-height:1.8}.stamp span{display:block;font-size:32px}.stamp.locked{opacity:.5}.stamp small{display:block;font-size:11px}.status{min-height:24px;font-size:13px;line-height:1.8;margin-top:12px}.full{width:100%;margin-top:16px}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(max-width:1000px){.layout{grid-template-columns:220px minmax(0,1fr);gap:18px}.side h1{font-size:29px}.isle{padding:8px;font-size:12px;gap:5px}.isle .icon{font-size:18px}.isle b{display:none}}@media(max-width:740px){header{height:auto;min-height:80px;padding:15px 5%;flex-wrap:wrap}.brand{font-size:15px}.tools{width:100%;justify-content:flex-end}.layout{display:block;padding:25px 5%}.side h1{font-size:29px}.side h1 br{display:none}.side>.card{display:none}.side>p{margin-bottom:20px}.maphead{margin-top:20px}.ocean{aspect-ratio:1/1.04;border-radius:20px}.world{height:100%;width:125%;left:-12.5%;top:-3%}.p0{left:22%;top:33%}.p1{left:78%;top:33%}.p2{left:22%;top:73%}.p3{left:78%;top:73%}.isle{font-size:11px;padding:8px 7px}.isle small{font-size:9px}.isle .icon{font-size:16px}.home{top:51%;font-size:11px}.mapstamp{top:18px;left:18px;font-size:9px}.tasklist{grid-template-columns:1fr}footer{flex-direction:column;padding:0 5% 25px}.maphead h2{font-size:18px}.pill{font-size:12px;padding:9px 12px}}
-</style></head><body>
-<header><a class="brand" href="./"><span class="mark">山</span><span>東山學習冒險島<small>DONGSHAN LEARNING ISLAND</small></span></a><div class="tools"><span class="tag" id="modeTag">全校版 · 初版</span><button class="pill" id="passport">🎒 我的護照</button><button class="primary" id="loginOpen">學生登入</button></div></header>
+#islandScene,.scene-tools{display:none}.scene-ready:not(.flat-view) .world{display:none}.scene-ready:not(.flat-view) #islandScene{display:block;position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none}.scene-ready #islandScene.dragging{cursor:grabbing}#islandScene:focus-visible{outline:3px solid #e99935;outline-offset:-5px}.scene-ready .mapstamp,.scene-ready .compass,.scene-ready .mapnote{z-index:100;pointer-events:none}.scene-ready:not(.flat-view) .scene-tools{display:flex;gap:6px;position:absolute;right:14px;bottom:12px;z-index:101}.scene-tools button{padding:7px 11px;background:#fffffff2}.scene-ready:not(.flat-view) .mapnote{text-align:left;left:18px;right:150px}.night .mapstamp,.night .compass,.night .mapnote{color:#e1f4eb}.map-buttons{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px}@media(max-width:740px){.scene-ready:not(.flat-view) .mapnote{bottom:54px;right:15px}.scene-ready:not(.flat-view) .scene-tools{right:12px}.scene-ready:not(.flat-view) .isle{font-size:11px}}</style></head><body>
+<header><a class="brand" href="./"><span class="mark">山</span><span>東山學習冒險島<small>DONGSHAN LEARNING ISLAND</small></span></a><div class="tools"><span class="tag" id="modeTag">全校版 · 3D</span><button class="pill" id="passport">🎒 我的護照</button><button class="primary" id="loginOpen">學生登入</button></div></header>
 <main class="layout"><aside class="side"><span class="eyebrow">EXPLORE · LEARN · GROW</span><h1>把好奇心，<br>帶到島上吧。</h1><p>從一個小任務開始，<br>讓每一次探索，長成自己的力量。</p><div class="card"><h2 id="greeting">你好，小小探險家！</h2><p id="identity">選一座喜歡的島，開始今天的冒險。</p><div class="stats"><span>四力徽章</span><b id="count">0 / 4</b></div><div class="progress"><i id="bar" style="width:0%"></i></div><span class="small" id="saveHint">尚未登入 · 可先試玩</span><button class="secondary full" id="demoOpen">免帳號試玩 →</button></div><div class="card"><span class="eyebrow">A LITTLE CHALLENGE</span><h2 style="margin-top:12px">今天，讓好奇心發芽</h2><div class="challenge"><span>🌱</span><div>完成兩個小挑戰，<br>點亮一枚四力徽章。</div></div><p class="small">答錯沒關係，看看提示再試一次。<br>每座島都有新的發現等著你。</p></div></aside>
-<section aria-labelledby="mapTitle"><div class="maphead"><div><h2 id="mapTitle">你的冒險，從這裡出發</h2><p>四座主題島嶼 · 一起探索，一起成長</p></div><button class="pill" id="listToggle" aria-expanded="false">☷ 地點清單</button></div><div class="ocean" id="ocean"><span class="mapstamp">東山群島 / EXPLORATION MAP</span><span class="compass">N<br>✧</span>
+<section aria-labelledby="mapTitle"><div class="maphead"><div><h2 id="mapTitle">你的冒險，從這裡出發</h2><p>四座主題島嶼 · 一起探索，一起成長</p></div><div class="map-buttons"><button class="pill" id="mapView" aria-pressed="false" hidden>切換平面</button><button class="pill" id="listToggle" aria-expanded="false">☷ 地點清單</button></div></div><div class="ocean" id="ocean"><canvas id="islandScene" tabindex="0" aria-label="3D 東山群島。拖曳或按方向鍵旋轉，按加減鍵縮放。"></canvas><div class="scene-tools" role="group" aria-label="3D 視角操作"><button class="pill" id="zoomOut" aria-label="縮小">−</button><button class="pill" id="zoomIn" aria-label="放大">＋</button><button class="pill" id="resetView">回全景</button></div><span class="mapstamp">東山群島 / EXPLORATION MAP</span><span class="compass">N<br>✧</span>
 <svg class="world" viewBox="0 0 1100 620" role="img" aria-label="四座學習島以木橋連接中央東山主島的示意地圖"><defs><pattern id="water" width="110" height="85" patternUnits="userSpaceOnUse"><path d="M10 28q9 6 18 0m45 35q9 6 18 0" fill="none" stroke="#80c9ca" stroke-width="2" opacity=".45"/></pattern><g id="island"><path d="M-135-2 -82-69 42-84 130-28 117 57 20 93-104 60Z" fill="#7cb8a4"/><path d="M-135-17 -82-84 42-99 130-43 117 42 20 78-104 45Z" fill="#fff2cc"/><path d="M-115-22 -74-68 39-82 109-40 100 29 18 61-88 34Z" fill="#b9dba0"/></g><g id="tree"><path d="M0 0v-23" stroke="#987954" stroke-width="6"/><path d="M-17-20 -13-43 3-52 20-32 13-15Z" fill="#42866d"/><path d="M3-52 3-17 20-32Z" fill="#66a27b"/></g><g id="house"><path d="M-34-5v-48h68v48Z" fill="#fff9e9"/><path d="M-43-52 0-84 43-52Z" fill="#e1946e"/><path d="M0-84 0-52h43Z" fill="#c87559"/><path d="M-9-5v-26H9v26" fill="#7a9784"/><path d="M-25-40h10v11h-10m30-11h10v11H15" fill="#8dbbbb"/></g></defs><path fill="url(#water)" d="M0 0h1100v620H0z"/><g fill="none" stroke="#ba9365" stroke-width="21"><path d="M310 180 540 300 790 180M300 450 540 300 790 450"/></g><g fill="none" stroke="#f3d4a1" stroke-width="15" stroke-dasharray="4 3"><path d="M310 180 540 300 790 180M300 450 540 300 790 450"/></g><g transform="translate(290 180)"><use href="#island"/><use href="#house" transform="translate(0 -8)"/><use href="#tree" transform="translate(-75 5)"/><use href="#tree" transform="translate(75 -5)"/><path d="M-8-93v-30m0 0h28l-7 10H-8" stroke="#587d8d" stroke-width="3" fill="#f2bf56"/></g><g transform="translate(810 180)"><use href="#island"/><path d="M-45-15v-63h90v63Z" fill="#e9f2e4"/><path d="M-52-78 0-100 52-78Z" fill="#8ca5c8"/><path d="M-29-60h58v24h-58Z" fill="#496877"/><path d="M-18-49h9m18 0h9" stroke="#b4dfc3" stroke-width="5"/><use href="#tree" transform="translate(-85 4)"/><use href="#tree" transform="translate(76 15)"/></g><g transform="translate(290 440)"><use href="#island"/><ellipse cy="-16" rx="65" ry="35" fill="#f4f3d6"/><ellipse cy="-16" rx="47" ry="23" fill="#91ba83"/><use href="#tree" transform="translate(-88 -12)"/><use href="#tree" transform="translate(70 -30)"/><circle cx="5" cy="-21" r="11" fill="#f5ce76"/><path d="M-2-27 11-17m-11 7 10-20" stroke="#fff" stroke-width="2"/></g><g transform="translate(810 440)"><use href="#island"/><use href="#house" transform="translate(0 -4)"/><path d="M-38-56 0-88 38-56" fill="#b986a7"/><path d="M-38-56 0-88 38-56" fill="none" stroke="#b986a7" stroke-width="8"/><use href="#tree" transform="translate(-78 5)"/><use href="#tree" transform="translate(80 -5)"/></g><g transform="translate(550 310)"><use href="#island" transform="scale(.92)"/><path d="M0 5v-65" stroke="#92724e" stroke-width="13"/><circle cx="0" cy="-78" r="43" fill="#51916a"/><circle cx="-27" cy="-62" r="26" fill="#76a67c"/><circle cx="31" cy="-62" r="29" fill="#66a275"/><g fill="#f9cf71"><circle cx="-20" cy="-88" r="7"/><circle cx="17" cy="-69" r="7"/><circle cx="3" cy="-104" r="7"/></g></g><g class="cloud" fill="#fff" opacity=".6"><path d="M20 130q-20-35 20-36 15-32 44-10 40-3 38 25Z"/><path d="M966 355q-20-35 20-36 15-32 44-10 40-3 38 25Z"/></g><g fill="#628f8e" font-size="22"><text x="66" y="520">⌁</text><text x="975" y="80">⌁</text></g></svg>
-<button class="isle p0" data-island="0"><span class="icon">🌏</span><span><small>雙語溝通力</small>世界溝通島</span><b>↗</b></button><button class="isle p1" data-island="1"><span class="icon">🤖</span><span><small>科技應用力</small>科技創意島</span><b>↗</b></button><button class="isle p2" data-island="2"><span class="icon">🌿</span><span><small>健康好體力</small>健康活力島</span><b>↗</b></button><button class="isle p3" data-island="3"><span class="icon">📖</span><span><small>閱讀文通力</small>閱讀探索島</span><b>↗</b></button><button class="isle home" id="home">🌳 東山主島</button><span class="mapnote">✦ 點選島嶼，開啟今天的小挑戰</span></div><div class="legend"><span><i></i>四力任務 · 每島 2 題</span><span>✓ 完成後收集徽章</span><button id="night" class="pill" aria-pressed="false">☾ 切換夜色</button><button id="motion" class="pill" aria-pressed="false">Ⅱ 暫停動態</button></div><div class="tasklist" id="tasklist" hidden></div></section></main>
-<footer><span>東山國小 · 全校版初版 v1.0<br>創意示意地圖；試玩紀錄不列入正式成績。</span><span id="footerHint">GitHub Pages 提供探索與試玩；正式帳密驗證由校方 Apps Script 處理。</span><a href="../">原版四力冒險島 ↗</a></footer>
+<button class="isle p0" data-island="0"><span class="icon">🌏</span><span><small>雙語溝通力</small>世界溝通島</span><b>↗</b></button><button class="isle p1" data-island="1"><span class="icon">🤖</span><span><small>科技應用力</small>科技創意島</span><b>↗</b></button><button class="isle p2" data-island="2"><span class="icon">🌿</span><span><small>健康好體力</small>健康活力島</span><b>↗</b></button><button class="isle p3" data-island="3"><span class="icon">📖</span><span><small>閱讀文通力</small>閱讀探索島</span><b>↗</b></button><button class="isle home" id="home">🌳 東山主島</button><span class="mapnote">✦ 拖曳轉動 3D 地圖 · 點選島嶼接任務</span></div><div class="legend"><span><i></i>四力任務 · 每島 2 題</span><span>✓ 完成後收集徽章</span><button id="night" class="pill" aria-pressed="false">☾ 切換夜色</button><button id="motion" class="pill" aria-pressed="false">Ⅱ 暫停動態</button></div><div class="tasklist" id="tasklist" hidden></div></section></main>
+<footer><span>東山國小 · 全校版 v1.1 · 3D 群島<br>創意示意地圖；試玩紀錄不列入正式成績。</span><span id="footerHint">GitHub Pages 提供探索與試玩；正式帳密驗證由校方 Apps Script 處理。</span><a href="../">原版四力冒險島 ↗</a></footer>
 <dialog id="modal"><button class="close" id="close" aria-label="關閉視窗">×</button><div id="modalBody"></div></dialog>
 <script src="config.js"></script><script>
 'use strict';
@@ -26,7 +26,7 @@ function show(html){returnFocus=dialog.open?returnFocus:document.activeElement;b
 $('#close').onclick=()=>{if(!busy)dialog.close()};dialog.addEventListener('cancel',e=>{if(busy)e.preventDefault()});dialog.addEventListener('close',()=>returnFocus?.focus());
 function rpc(name,...args){return new Promise((resolve,reject)=>{if(!IS_GAS)return reject(new Error('正式登入服務尚未設定。'));google.script.run.withSuccessHandler(resolve).withFailureHandler(()=>reject(new Error('服務暫時無法連線，請稍後再試。')))[name](...args);});}
 function render(){
- $('#modeTag').textContent=user?'學生已登入':demo?'試玩模式':'全校版 · 初版';$('#loginOpen').textContent=user?'登出':'學生登入';
+ $('#modeTag').textContent=user?'學生已登入':demo?'試玩模式':'全校版 · 3D';$('#loginOpen').textContent=user?'登出':'學生登入';
  $('#greeting').textContent=user?'你好，'+user.name+'！':demo?'你好，試玩探險家！':'你好，小小探險家！';
  $('#identity').textContent=user?user.classCode+' 班 · '+user.seat+' 號':'選一座喜歡的島，開始今天的冒險。';
  $('#saveHint').textContent=user?'正式紀錄 · 已同步雲端':demo?'試玩紀錄 · 僅此瀏覽器':'尚未登入 · 可先試玩';
@@ -48,4 +48,235 @@ function question(){const t=TASKS[current],q=t.questions[step];show(`<span class
 function passport(){show(`<div class="modalicon">🎒</div><span class="eyebrow">MY EXPLORATION PASSPORT</span><h2>${user?esc(user.name)+'的':'我的'}冒險護照</h2><p>${user?'正式紀錄':demo?'試玩紀錄':'尚未登入'} · 已收集 ${earned.length} / 4 枚徽章</p><div class="stamps">${TASKS.map((t,i)=>`<div class="stamp ${earned.includes(i)?'':'locked'}"><span>${earned.includes(i)?t.icon:'◇'}</span><b>${t.badge}</b><small>${earned.includes(i)?'✓ 已收集':t.power+' · 等你探索'}</small></div>`).join('')}</div><p class="small">${user?'登入狀態最長一小時；重新整理後請重新登入，正式徽章仍會保留。':'試玩與正式進度分開保存。試玩進度不會轉入正式帳號。'}</p>${demo?'<button class="secondary" id="resetDemo">清除試玩進度</button>':''}`);if(demo)$('#resetDemo').onclick=()=>{show('<h2>重新開始試玩？</h2><p>會清除此瀏覽器的四枚試玩徽章，不影響正式學生紀錄。</p><button class="primary" id="confirmReset">確認清除試玩徽章</button>');$('#confirmReset').onclick=()=>{earned=[];try{localStorage.removeItem('dsps-school-v1-demo');}catch{}render();passport();};};}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-island]');if(b)island(+b.dataset.island);});$('#loginOpen').onclick=login;$('#demoOpen').onclick=enterDemo;$('#passport').onclick=passport;
 $('#listToggle').onclick=()=>{const l=$('#tasklist');l.hidden=!l.hidden;$('#listToggle').setAttribute('aria-expanded',String(!l.hidden));};$('#night').onclick=()=>{const on=$('#ocean').classList.toggle('night');$('#night').setAttribute('aria-pressed',String(on));$('#night').textContent=on?'☀ 回到白天':'☾ 切換夜色';};$('#motion').onclick=()=>{const on=$('#ocean').classList.toggle('paused');$('#motion').setAttribute('aria-pressed',String(on));$('#motion').textContent=on?'▶ 開啟動態':'Ⅱ 暫停動態';};$('#home').onclick=()=>show('<div class="modalicon">🌳</div><span class="eyebrow">GROW TOGETHER</span><h2>歡迎來到東山主島</h2><p>從雙語、科技、健康與閱讀出發，練習自發探索、互動學習與共好。這是全校冒險島的第一版，現在可以完成四島的八個示範挑戰。</p><div class="notice">本版提供四力徽章與進度紀錄。尚未加入多人連線、教師派任務及校內點數兌換。</div>');render();
+</script><script>
+(() => {
+  const ocean = document.querySelector('#ocean');
+  const canvas = document.querySelector('#islandScene');
+  const ctx = canvas.getContext('2d');
+  if (!ctx || typeof ResizeObserver === 'undefined') return;
+  const labels = [...ocean.querySelectorAll('.isle')];
+  const terrain = [], objects = [];
+  const sites = [[-6.4,-5.5],[6.4,-5.5],[-6.4,5.5],[6.4,5.5],[0,0]];
+  const colors = ['#91c97e','#8bc6a3','#a8cb71','#a0c88a','#98ca82'];
+  let seed = 415;
+  const rand = () => ((seed = (seed * 1664525 + 1013904223) >>> 0) / 4294967296);
+  const rgb = hex => [1,3,5].map(i => parseInt(hex.slice(i,i+2),16));
+  function face(group, vertices, color) {
+    const [a,b,c] = vertices;
+    const u = b.map((v,i)=>v-a[i]), v = c.map((n,i)=>n-a[i]);
+    const n = [u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]];
+    const length = Math.hypot(...n) || 1;
+    const light = .73 + .27*Math.max(0,(n[0]*-.42+n[1]*.84+n[2]*.34)/length);
+    group.push({vertices, normal:n, color:rgb(color).map(c=>Math.round(c*light))});
+  }
+  function ring(x,y,z,r,sides,phase=0,stretch=1) {
+    return Array.from({length:sides},(_,i)=>{
+      const a=phase-i*Math.PI*2/sides;
+      return [x+r*Math.cos(a),y,z+r*Math.sin(a)*stretch];
+    });
+  }
+  function layer(group, top, bottom, color, cap) {
+    if(cap)face(group,top,cap);
+    top.forEach((p,i)=>{
+      const j=(i+1)%top.length;
+      face(group,[p,bottom[i],bottom[j],top[j]],color);
+    });
+  }
+  function box(group,x,y,z,w,h,d,color,angle=0) {
+    const corners=[[-w/2,-d/2],[-w/2,d/2],[w/2,d/2],[w/2,-d/2]];
+    const points = height=>corners.map(([a,b])=>[x+a*Math.cos(angle)-b*Math.sin(angle),height,z+a*Math.sin(angle)+b*Math.cos(angle)]);
+    layer(group,points(y+h),points(y),color,color);
+  }
+  function cone(x,y,z,r,h,color,sides=7,upper=0) {
+    const low=ring(x,y,z,r,sides,.28);
+    if(upper) layer(objects,ring(x,y+h,z,upper,sides,.28),low,color,color);
+    else low.forEach((p,i)=>face(objects,[[x,y+h,z],p,low[(i+1)%sides]],color));
+  }
+  function tree(x,z,s=1) {
+    box(objects,x,1.16,z,.24*s,.73*s,.24*s,'#a1714c');
+    cone(x,1.52,z,.78*s,1.35*s,'#3c9368');
+    cone(x,1.94,z,.62*s,1.04*s,'#59ad72');
+  }
+  function house(x,z,roofColor,wall='#f9e8c7') {
+    box(objects,x,1.16,z,2.4,1.32,1.7,wall);
+    const a=[x-1.39,2.48,z-1.02], b=[x+1.39,2.48,z-1.02], c=[x+1.39,2.48,z+1.02], d=[x-1.39,2.48,z+1.02];
+    const e=[x-1.39,3.46,z], f=[x+1.39,3.46,z];
+    face(objects,[a,e,f,b],roofColor);face(objects,[e,d,c,f],roofColor);
+    face(objects,[a,d,e],roofColor);face(objects,[b,f,c],roofColor);
+    box(objects,x,1.16,z+.87,.45,.83,.07,'#806754');
+    for(const dx of [-.73,.73])box(objects,x+dx,1.79,z+.87,.44,.39,.08,'#6da8ad');
+  }
+  sites.forEach(([x,z],i)=>{
+    const r=i===4?2.48:3.1;
+    const shell=ring(x,.18,z,r*.84,9,.2,.87);
+    const rim=ring(x,.76,z,r,9,.2,.87);
+    const top=ring(x,1.06,z,r*.97,9,.2,.87);
+    const grass=ring(x,1.16,z,r*.85,9,.2,.87);
+    layer(terrain,rim,shell,'#987e68');
+    layer(terrain,top,rim,'#d0a57a');
+    layer(terrain,grass,top,'#f2d39b',colors[i]);
+    for(let j=0;j<5;j++){
+      const a=(j/5)*Math.PI*2+.48;
+      tree(x+Math.cos(a)*r*.62,z+Math.sin(a)*r*.56,.58+rand()*.38);
+    }
+    for(let j=0;j<9;j++){
+      const a=rand()*Math.PI*2, d=r*(.52+rand()*.2);
+      box(objects,x+Math.cos(a)*d,1.16,z+Math.sin(a)*d,.12,.08,.12,j%2?'#f7df86':'#f5a7a7');
+    }
+  });
+  for(const [x,z] of sites.slice(0,4)){
+    const length=Math.hypot(x,z), dx=x/length,dz=z/length;
+    const angle=Math.atan2(dz,dx)+Math.PI/2;
+    for(let t=1.8;t<length-2.3;t+=.29){
+      box(terrain,dx*t,.81,dz*t,.95,.16,.265,'#d7a76d',angle);
+    }
+    for(const t of [2.02,3.3,4.6,length-2.45]){
+      for(const side of [-1,1]){
+        box(terrain,dx*t+side*dz*.43,.95,dz*t-side*dx*.43,.11,.37,.11,'#9a704c');
+      }
+    }
+  }
+  house(-6.4,-5.5,'#df805d');
+  box(objects,6.4,1.16,-5.5,2.5,1.6,1.85,'#d4e8ec');
+  box(objects,6.4,2.76,-5.5,2.77,.22,2.04,'#577da2');
+  box(objects,6.4,1.68,-4.53,1.7,.74,.09,'#4b8494');
+  box(objects,6.4,2.98,-5.5,.09,.64,.09,'#677f8c');
+  cone(6.4,3.59,-5.5,.24,.28,'#e8bf64');
+  face(objects,ring(-6.4,1.18,5.5,1.68,18,0,.75),'#f2dfaa');
+  face(objects,ring(-6.4,1.19,5.5,1.33,18,0,.75),'#72b58a');
+  box(objects,-6.4,1.19,5.5,.05,.018,1.99,'#faf1cf');
+  house(6.4,5.5,'#ad78a6','#f5dfb4');
+  box(objects,0,1.16,0,.53,1.46,.53,'#94724f');
+  cone(0,2.1,0,1.39,2.1,'#4a9e6b',9,.38);
+  cone(-.66,2.09,.32,.79,1.35,'#73bc77',7,.24);
+  cone(.73,2.19,.24,.84,1.37,'#5bb373',7,.28);
+  for(const [x,z,y] of [[-.6,.5,3.25],[.45,.65,3.5],[.15,-.43,3.77]]){
+    cone(x,y,z,.15,.22,'#f6cd62',5,.06);
+  }
+  // A small sailboat and buoys give the water a sense of scale.
+  const boat = [[1.9,.15,6.9],[2.55,.15,6.48],[3.52,.15,6.9],[2.55,.15,7.32]];
+  layer(objects,boat,boat.map(([x,,z])=>[2.55+(x-2.55)*.75,.02,6.9+(z-6.9)*.72]),'#b57951','#f0c993');
+  box(objects,2.53,.15,6.9,.045,1.2,.045,'#9a7658');
+  const sail=[[2.56,.31,6.9],[3.2,.31,6.9],[2.56,1.31,6.9]];
+  face(objects,sail,'#fff3cb');
+  face(objects,[...sail].reverse(),'#fff3cb');
+  for(const [x,z] of [[-3.2,-8.2],[9.7,1.7],[-8.6,1.2]])cone(x,.03,z,.15,.24,'#ed9471',7,.1);
+  const waves = Array.from({length:170},()=>[(rand()-.5)*54,(rand()-.5)*54,.25+rand()*.47,rand()*Math.PI*2]);
+  let yaw=-.16, pitch=.67, zoom=1, width=0,height=0, frame=0, animation=0;
+  let drag=null, lastFrame=0;
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+  function draw(time=0){
+    if(!width || !height)return;
+    const night=ocean.classList.contains('night'), paused=ocean.classList.contains('paused')||reduced.matches;
+    const cy=Math.cos(yaw), sy=Math.sin(yaw), cp=Math.cos(pitch), sp=Math.sin(pitch);
+    const scale=Math.min(width/25,height/18.2)*zoom;
+    function project([x,y,z]){
+      const a=x*cy-z*sy, b=x*sy+z*cy;
+      const depth=b*cp+(y-1)*sp, k=42/(42-depth);
+      return [width/2+a*scale*k,height*.49+(b*sp-(y-1)*cp)*scale*k,depth];
+    }
+    const eye=[42*cp*sy,1+42*sp,42*cp*cy];
+    const sea=ctx.createLinearGradient(0,0,width,height);
+    sea.addColorStop(0,night?'#1c415b':'#b9e5d9');sea.addColorStop(1,night?'#386c81':'#75bdbb');
+    ctx.fillStyle=sea;ctx.fillRect(0,0,width,height);
+    ctx.lineWidth=1.4;
+    waves.forEach(([x,z,l,phase])=>{
+      const a=project([x,0,z]), b=project([x+l,0,z+.13]);
+      if(a[0]<-20||a[0]>width+20||a[1]<-20||a[1]>height+20)return;
+      const opacity=.19+.1*Math.sin(phase+(paused?0:time/950));
+      ctx.strokeStyle=night?'rgba(162,218,236,'+opacity+')':'rgba(255,255,238,'+opacity+')';
+      ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.quadraticCurveTo((a[0]+b[0])/2,a[1]+2,b[0],b[1]);ctx.stroke();
+    });
+    // Draw a submerged shoreline and a thin foam edge in world space.
+    for(const [i,[x,z]] of sites.entries()){
+      const radius=i===4?2.48:3.1;
+      for(const [offset,fill,stroke] of [[.47,night?'#5b97a44d':'#d1eee65e',night?'#97d0d144':'#e9fff1a0'],[-.1,'#1f676a33','transparent']]){
+        const outline=ring(x,0,z,radius+offset,9,.2,.87).map(project);
+        ctx.beginPath();outline.forEach(([px,py],j)=>j?ctx.lineTo(px,py):ctx.moveTo(px,py));ctx.closePath();
+        ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle=stroke;ctx.lineWidth=1;ctx.stroke();
+      }
+    }
+    function paint(group){
+      const projected=[];
+      for(const f of group){
+        const p=f.vertices[0], n=f.normal;
+        if(n[0]*(eye[0]-p[0])+n[1]*(eye[1]-p[1])+n[2]*(eye[2]-p[2])<=0)continue;
+        const points=f.vertices.map(project);
+        projected.push({points,depth:points.reduce((s,p)=>s+p[2],0)/points.length,color:f.color});
+      }
+      projected.sort((a,b)=>a.depth-b.depth);
+      for(const {points,color} of projected){
+        const c=night?color.map((n,i)=>Math.round(n*.58+[15,27,42][i])):color;
+        ctx.fillStyle='rgb('+c.join(',')+')';
+        ctx.beginPath();points.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));ctx.closePath();ctx.fill();
+        ctx.strokeStyle=ctx.fillStyle;ctx.lineWidth=.65;ctx.stroke();
+      }
+    }
+    paint(terrain);paint(objects);
+    sites.forEach(([x,z],i)=>{
+      const [px,py,depth]=project([x,1.1,z]);
+      const label=labels[i];
+      label.style.left=Math.max(label.offsetWidth/2+7,Math.min(width-label.offsetWidth/2-7,px))+'px';
+      label.style.top=Math.max(46,Math.min(height-54,py+29))+'px';
+      label.style.zIndex=String(2+Math.round(depth+24));
+    });
+  }
+  function schedule(){
+    if(frame)return;
+    frame=requestAnimationFrame(t=>{frame=0;draw(t);});
+  }
+  function setZoom(value){zoom=Math.max(.72,Math.min(1.65,value));schedule();}
+  function reset(){yaw=-.16;pitch=.67;zoom=1;schedule();}
+  canvas.addEventListener('pointerdown',e=>{
+    if(!e.isPrimary||e.button!==0)return;
+    canvas.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY};canvas.classList.add('dragging');
+  });
+  canvas.addEventListener('pointermove',e=>{
+    if(!drag||!e.isPrimary)return;
+    yaw+=(e.clientX-drag.x)*.008;
+    pitch=Math.max(.37,Math.min(1.1,pitch+(e.clientY-drag.y)*.006));
+    drag={x:e.clientX,y:e.clientY};schedule();
+  });
+  canvas.addEventListener('lostpointercapture',()=>{drag=null;canvas.classList.remove('dragging');});
+  canvas.addEventListener('keydown',e=>{
+    if(e.key==='ArrowLeft')yaw-=.13;
+    else if(e.key==='ArrowRight')yaw+=.13;
+    else if(e.key==='ArrowUp')pitch=Math.min(1.1,pitch+.09);
+    else if(e.key==='ArrowDown')pitch=Math.max(.37,pitch-.09);
+    else if(e.key==='+'||e.key==='=')setZoom(zoom+.12);
+    else if(e.key==='-')setZoom(zoom-.12);
+    else return;
+    e.preventDefault();schedule();
+  });
+  document.querySelector('#zoomIn').onclick=()=>setZoom(zoom+.14);
+  document.querySelector('#zoomOut').onclick=()=>setZoom(zoom-.14);
+  document.querySelector('#resetView').onclick=reset;
+  document.querySelector('#mapView').onclick=e=>{
+    const flat=ocean.classList.toggle('flat-view');
+    e.currentTarget.textContent=flat?'切換 3D':'切換平面';
+    e.currentTarget.setAttribute('aria-pressed',String(flat));
+    labels.forEach(label=>{if(flat){label.style.left='';label.style.top='';label.style.zIndex='';}});
+    ocean.querySelector('.mapnote').textContent=flat?'✦ 點選島嶼，開啟今天的小挑戰':'✦ 拖曳轉動 3D 地圖 · 點選島嶼接任務';
+    if(!flat)schedule();
+  };
+  const observer=new ResizeObserver(()=>{
+    width=ocean.clientWidth;height=ocean.clientHeight;
+    const dpr=Math.min(devicePixelRatio||1,2);
+    canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    if(!ocean.classList.contains('flat-view'))schedule();
+  });
+  observer.observe(ocean);
+  function animate(t){
+    if(t-lastFrame>=38&&!document.hidden&&!ocean.classList.contains('flat-view')&&!ocean.classList.contains('paused')&&!reduced.matches){lastFrame=t;draw(t);}
+    animation=requestAnimationFrame(animate);
+  }
+  new MutationObserver(()=>{if(!ocean.classList.contains('flat-view'))schedule();}).observe(ocean,{attributes:true,attributeFilter:['class']});
+  ocean.classList.add('scene-ready');
+  document.querySelector('#mapView').hidden=false;
+  animation=requestAnimationFrame(animate);
+  addEventListener('pagehide',()=>cancelAnimationFrame(animation));
+  addEventListener('pageshow',e=>{if(e.persisted)animation=requestAnimationFrame(animate);});
+})();
+
 </script></body></html>
